@@ -207,7 +207,7 @@ if __name__ == "__main__":
         '--remove_input_channel',
         help='When using all input channels set to NA. For the ablation study, one of the four input channels is removed, the valid input channels to be removed are loc, dur, sal.',
         type=str,
-        default='NA'
+        default='sal'
     )
 
     parser.add_argument(

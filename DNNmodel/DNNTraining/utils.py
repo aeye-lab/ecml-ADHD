@@ -49,7 +49,7 @@ def load_X_input_files(X_files_path, video_indx, user_list, df_label, label, rem
         X_tmp = np.load(sub_file_path, allow_pickle=True)
         #remove selected input channels for ablation study
         if remove_input_channel != 'NA':
-            if remove_input_channel == 'pos':
+            if remove_input_channel == 'loc':
                 X_tmp = X_tmp[:,[2,3]]
             elif remove_input_channel == 'dur':
                 X_tmp = X_tmp[:,[0,1,3]]
@@ -100,7 +100,7 @@ def compute_mean_std(X, remove_input_channel):
         mean=np.array([np.mean(channel1), np.mean(channel2), np.mean(channel3), np.mean(channel4)])
         std=np.array([np.std(channel1), np.std(channel2), np.std(channel3), np.std(channel4)])
 
-    elif remove_input_channel == 'pos':
+    elif remove_input_channel == 'loc':
         channel1 = [x[:,0] for x in X]
         channel1 = np.concatenate(channel1).ravel()
         channel2 = [x[:,1] for x in X]
