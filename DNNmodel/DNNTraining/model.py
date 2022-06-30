@@ -80,7 +80,7 @@ class CNN_classif():
 
     def train(self, X_train, Y_train, X_val, Y_val, pretrain_model, save_weights_flag, fold_counter):
         # callback for early stopping
-        callbacks = [EarlyStopping(monitor='val_loss', patience=20, mode = 'min', restore_best_weights=True)]
+        callbacks = [EarlyStopping(monitor='val_loss', patience=20, mode = 'min')]
         print('Train CNN...')
         if not pretrain_model:
             print('Train model from scratch...')
