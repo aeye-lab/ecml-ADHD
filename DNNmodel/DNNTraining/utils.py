@@ -44,7 +44,7 @@ def load_X_input_files(X_files_path, video_indx, user_list, df_label, label, rem
     X = []
     for sub in tqdm(user_list):
         sub_file_path = X_files_path + f'X_{sub}_DeepGazeII_Video_{video_name}.npy'
-        print('Loading data from file {}'.format(sub_file_path))
+        #print('Loading data from file {}'.format(sub_file_path))
         # load X file
         X_tmp = np.load(sub_file_path, allow_pickle=True)
         #remove selected input channels for ablation study

@@ -178,6 +178,9 @@ def evaluate(video_indx, sal_model, remove_input_channel, pretrain, sub_info_pat
     #save file
     dic={'auc': auc_rounds}
     cur_save_path = results_save_dir + f'res_Video{video_indx}_pretrain{pretrain}_remove{remove_input_channel}_{num_folds}folds_{num_iter}iter.json'
+    isExist = os.path.exists(cur_save_path)
+    if not isExist:
+        os.makedirs(cur_save_path)
     with open(cur_save_path, 'w') as fp:
         json.dump(dic, fp, indent = 4)
 
@@ -207,7 +210,7 @@ if __name__ == "__main__":
         '--remove_input_channel',
         help='When using all input channels set to NA. For the ablation study, one of the four input channels is removed, the valid input channels to be removed are loc, dur, sal.',
         type=str,
-        default='sal'
+        default='NA'
     )
 
     parser.add_argument(
@@ -221,14 +224,14 @@ if __name__ == "__main__":
         '--sub_info_path',
         help='Directory for saving subject information',
         type=str,
-        default='../../Data/sub_info/'
+        default='./Data/sub_info/'
     )
 
     parser.add_argument(
         '--input_dir',
         help='Directory for saved input files',
         type=str,
-        default='../../Data/X_input/'
+        default='./Data/X_input/'
     )
 
     parser.add_argument(

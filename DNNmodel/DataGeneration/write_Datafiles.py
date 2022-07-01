@@ -132,28 +132,28 @@ if __name__ == '__main__':
         '--saved_salmap_path',
         help='saved saliency map path',
         type=str,
-        default='../../Data/saliency_map/'
+        default='./Data/saliency_map/'
     )
 
     parser.add_argument(
         '--pix_files_dir',
         help='Directory for the preprocessed pixel files (after downsampling and missing value processing)',
         type=str,
-        default='../../Data/X_px/'
+        default='./Data/X_px/'
     )
 
     parser.add_argument(
         '--save_dir',
         help='Directory for saving new input files',
         type=str,
-        default='../../Data/X_input/'
+        default='./Data/X_input/'
     )
 
     parser.add_argument(
         '--sub_info_path',
         help='Directory for saving subject information',
         type=str,
-        default='../../Data/sub_info/'
+        default='./Data/sub_info/'
     )
 
     args = parser.parse_args()
