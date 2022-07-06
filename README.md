@@ -4,6 +4,21 @@ In this paper, we explore whether Attention-deficit/hyperactivity disorder (ADHD
 
 ## Setup
 
+Clone repository:
+
+```
+git clone git@github.com:aeye-labs/ecml-ADHD
+```
+
+or
+
+```
+git clone https://github.com/aeye-labs/ecml-ADHD
+```
+
+and change to the cloned repo via `cd ecml-ADHD`.
+
+
 Install dependencies:
 
 ```
@@ -13,7 +28,7 @@ pip install -r requirements.txt
 ## Run Experiments
 
 ### Prepare saliency maps
-Please download videos from ..., break it down into frames (e.g. use ffmpeg packages) and put them under the folder /Data/videos/frames_{video_name}/
+Please download videos from http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/EEG-Eyetracking%20Protocol.html, and break it down into frames (e.g. use ffmpeg packages) and put them under the folder /Data/videos/frames_{video_name}/
 
 We use a state-of-the-art saliency model, DeepGazeII to compute salinecy maps for our video stimuli. Download the files you need to run the DeepGazeII model (https://drive.google.com/file/d/1kYUwoatqQUS5EabeeSDc6gRmCysnVZ6N/view)，and stored under the folder /DNN_model/DataGeneration/
 
