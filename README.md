@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ### Prepare saliency maps
 Please download videos from http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/EEG-Eyetracking%20Protocol.html, and break it down into frames (e.g. use ffmpeg packages) and put them under the folder /Data/videos/frames_{video_name}/
 
-We use a state-of-the-art saliency model, DeepGazeII to compute salinecy maps for our video stimuli. Download the files you need to run the DeepGazeII model (https://drive.google.com/file/d/1kYUwoatqQUS5EabeeSDc6gRmCysnVZ6N/view)，and stored under the folder /DNN_model/DataGeneration/
+We use a state-of-the-art saliency model, DeepGazeII to compute salinecy maps for our video stimuli. Download the files you need to run the DeepGazeII model https://drive.google.com/file/d/1kYUwoatqQUS5EabeeSDc6gRmCysnVZ6N/view, and stored under the folder /DNN_model/DataGeneration/
 
 To generate the saliency maps for all videos, run
 ```
