@@ -1,6 +1,6 @@
 # Detection of ADHD based on Eye Movements during Natural Viewing
-[![paper](https://img.shields.io/static/v1?label=paper&message=download%20link&color=brightgreen)](https://dl.acm.org/doi/10.1145/3517031.3529633)
-https://arxiv.org/abs/2207.01377
+[![paper](https://img.shields.io/static/v1?label=paper&message=download%20link&color=brightgreen)](https://arxiv.org/abs/2207.01377)
+
 In this paper, we explore whether Attention-deficit/hyperactivity disorder (ADHD) can be detected based on recorded eye movements together with information about the video stimulus in a free-viewing task
 
 ## Setup
