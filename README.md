@@ -57,10 +57,12 @@ bash run_models.sh
 If you use our code for your research, please consider citing our paper:
 
 ```bibtex
-@article{deng2022detection,
-title={Detection of ADHD based on Eye Movements during Natural Viewing},
-author={Deng, Shuwen and Prasse, Paul and Reich, David R and Dziemian, Sabine and Stegenwallner-Sch{\"u}tz, Maja and Krakowczyk, Daniel and Makowski, Silvia and Langer, Nicolas and Scheffer, Tobias and J{\"a}ger, Lena A},
-journal={arXiv preprint arXiv:2207.01377},
-year={2022}
+@inproceedings{deng2023detection,
+  title={Detection of ADHD based on eye movements during natural viewing},
+  author={Deng, Shuwen and Prasse, Paul and Reich, David R and Dziemian, Sabine and Stegenwallner-Sch{\"u}tz, Maja and Krakowczyk, Daniel and Makowski, Silvia and Langer, Nicolas and Scheffer, Tobias and J{\"a}ger, Lena A},
+  booktitle={Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2022, Grenoble, France, September 19--23, 2022, Proceedings, Part VI},
+  pages={403--418},
+  year={2023},
+  organization={Springer}
 }
 ```
