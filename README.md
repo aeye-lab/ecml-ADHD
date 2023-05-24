@@ -8,13 +8,13 @@ In this paper, we explore whether Attention-deficit/hyperactivity disorder (ADHD
 Clone repository:
 
 ```
-git clone git@github.com:aeye-labs/ecml-ADHD
+git clone git@github.com:aeye-lab/ecml-ADHD
 ```
 
 or
 
 ```
-git clone https://github.com/aeye-labs/ecml-ADHD
+git clone https://github.com/aeye-lab/ecml-ADHD
 ```
 
 and change to the cloned repo via `cd ecml-ADHD`.
